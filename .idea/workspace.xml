@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d9bad2f-7c30-493d-b79b-3368e602560e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DbLink/DbLinkMain.py" afterPath="$PROJECT_DIR$/DbLink/DbLinkMain.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DbLink/DbLinkUI.py" afterPath="$PROJECT_DIR$/DbLink/DbLinkUI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dialog/dialogMain.py" afterPath="$PROJECT_DIR$/Dialog/dialogMain.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dialog/dialogUI.py" afterPath="$PROJECT_DIR$/Dialog/dialogUI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dialog/dialogmainUI.py" afterPath="$PROJECT_DIR$/Dialog/dialogmainUI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Progress/progressMain.py" afterPath="$PROJECT_DIR$/Progress/progressMain.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TabAndGraph/TabAndGraphMain.py" afterPath="$PROJECT_DIR$/TabAndGraph/TabAndGraphMain.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TabAndGraph/TabAndGraphUI.py" afterPath="$PROJECT_DIR$/TabAndGraph/TabAndGraphUI.py" />
-    </list>
+    <list default="true" id="5d9bad2f-7c30-493d-b79b-3368e602560e" name="Default" comment="" />
     <ignored path="PyQt5.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
