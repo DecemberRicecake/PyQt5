@@ -1,21 +1,21 @@
 # PyQt5各种demo
-## 其它几个都是简易demo，Weather demo比较完整，放一下截图
+##### 其它几个都是简易demo，Weather demo比较完整，放一下截图
 ![界面效果](pic/001.png)
 
 ## 安装：
 - pip install PyQt5
 - pip install PyQt5-tools
-#### 国内加速：
+##### 国内加速：
 - pip install PyQt5 -i https://pypi.douban.com/simple
 - pip install PyQt5-tools -i https://pypi.douban.com/simple
 
 
 ## 编译：
-#### 不带调试窗口：
+##### 不带调试窗口：
 - C:\Python36\Scripts\pyinstaller.exe  -F -w -i  logo.ico Tools.py -n weather
-#### 带调试窗口：
+##### 带调试窗口：
 - C:\Python36\Scripts\pyinstaller.exe  -F -i  logo.ico Tools.py -n weather
-#### 参考文档：
+##### 参考文档：
 - https://blog.csdn.net/weixin_42296333/article/details/81178915
 
 ## 其他：
