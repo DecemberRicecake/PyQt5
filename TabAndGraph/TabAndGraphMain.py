@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 from PyQt5 import QtWidgets
-from TabAndGraph.TabAndGraphUI import Ui_MainWindow
+from TabAndGraphUI import Ui_MainWindow
 import pyqtgraph as pg
 
 

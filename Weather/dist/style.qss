@@ -1,0 +1,105 @@
+/*
+ * qss样式
+ *
+ */
+
+
+QWidget
+{
+    color: #31363b;
+    background-color: solid darkGray;
+    background-clip: border;
+    border-image: none;
+    border: 0px transparent black;
+    outline: 0;
+}
+
+QWidget#centralwidget
+{
+    background: #ff7691;
+    border:1px solid #ff919a;
+    border-radius:10px;
+    /*border-bottom-left-radius:10px;
+    border-top:1px solid #ff919a;
+    border-bottom:1px solid #ff919a;
+    border-left:1px solid #ff919a;*/
+}
+
+QPushButton
+{
+    background: #6DDF6D;
+    border-radius: 5px;
+}
+
+QPushButton:hover
+{
+    background: green;
+}
+
+QPushButton#closeButton
+{
+    background: #F76677;
+    border-radius: 5px;
+}
+
+QPushButton#closeButton:hover
+{
+    background: red;
+}
+
+QPushButton#miniButton
+{
+    background: #F7D674;
+    border-radius: 5px;
+}
+
+QPushButton#miniButton:hover
+{
+    background: yellow;
+}
+
+QComboBox
+{
+    background: #cecece;
+    selection-background-color: #3daee9;
+    border-style: solid;
+    border: 1px solid #76797C;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+QComboBox:hover
+{
+    border: 1px solid pink;
+    color: white;
+}
+
+QComboBox:on
+{
+    padding-top: 3px;
+    padding-left: 4px;
+    selection-background-color: #4a4a4a;
+}
+
+QComboBox::drop-down
+{
+    background: #cecece;
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 0px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+QTableWidget
+{
+    color: white;
+    background: #ff919a;
+    selection-background-color: #afaeae;
+}
+
+

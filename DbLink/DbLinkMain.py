@@ -2,7 +2,7 @@
 import sys
 from PyQt5 import QtSql
 from PyQt5 import QtWidgets
-from DbLink.DbLinkUI import Ui_MainWindow
+from DbLinkUI import Ui_MainWindow
 
 
 class MyWindow(QtWidgets.QWidget, Ui_MainWindow):

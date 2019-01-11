@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import sys
 from PyQt5 import QtWidgets
-from Progress.progressThread import Runthread
-from Progress.progressUI import Ui_MainWindow
+from progressThread import Runthread
+from progressUI import Ui_MainWindow
 
 
 class MyWindow(QtWidgets.QWidget, Ui_MainWindow):

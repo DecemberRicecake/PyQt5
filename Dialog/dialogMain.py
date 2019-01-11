@@ -2,8 +2,8 @@
 import sys
 from PyQt5 import QtWidgets
 
-from Dialog.dialogUI import Ui_Dialog
-from Dialog.dialogmainUI import Ui_MainWindow
+from dialogUI import Ui_Dialog
+from dialogmainUI import Ui_MainWindow
 
 
 class MyWindow(QtWidgets.QWidget, Ui_MainWindow):

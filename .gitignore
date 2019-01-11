@@ -1,3 +1,2 @@
 #ignore these files
-Weather/*
-Weather/
+*.exe
