@@ -1,5 +1,5 @@
 # PyQt5各种demo
-##### 其它几个都是简易demo，Weather demo比较完整，放一下截图  
+##### Weather demo比较完整, 其它几个是简易demo  
 ![界面效果](pic/001.png)  
 
 ## 安装：
