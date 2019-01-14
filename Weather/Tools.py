@@ -7,7 +7,12 @@ from PyQt5 import QtCore
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import QPoint
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
 from PyQt5.QtGui import QMouseEvent
+from PyQt5.QtWidgets import QAction, qApp
+from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QMenu
+from PyQt5.QtWidgets import QSystemTrayIcon
 from PyQt5.QtWidgets import QTableWidgetItem
 from weatherThread import Runthread
 
@@ -34,11 +39,28 @@ class MyWindow(QtWidgets.QWidget, Ui_MainWindow):
         # self.pushButton_refresh.clicked.connect(lambda: self.start_create("customer", 1))  # 可以传多个参数入线程
         self.pushButton_refresh.clicked.connect(lambda: self.start_create())    # 界面的按钮事件需要提前注册
         self.closeButton.clicked.connect(self.close)         # 界面退出程序
-        self.miniButton.clicked.connect(self.showMinimized)  # 界面最小化
+        self.miniButton.clicked.connect(self.init_tuopan)  # 界面最小化
+        # self.miniButton.clicked.connect(self.showMinimized)  # 界面最小化
+        self.trayIcon = QSystemTrayIcon(self)           # 托盘
+        self.trayIcon.setIcon(QIcon(config.path_icon))  # 托盘图标
         self.time_thread = Runthread_t(self)
         self.time_thread.nonglisignal.connect(self.displaynongli)   # 刷新界面农历
         self.time_thread.timesignal.connect(self.displaytime)       # 刷新界面公历
         self.time_thread.start()
+
+    def init_tuopan(self):
+        self.hide()
+        restoreAction = QAction("&显示主窗口", self, triggered=self.showNormal)
+        quitAction = QAction("&退出", self, triggered=self.close)
+        self.trayIconMenu = QMenu(self)
+        self.trayIconMenu.addAction(restoreAction)
+        # self.trayIconMenu.addSeparator()   # 分割线
+        self.trayIconMenu.addAction(quitAction)
+
+        self.setWindowIcon(QIcon(config.path_icon))
+        self.trayIcon.setContextMenu(self.trayIconMenu)
+        self.trayIcon.show()
+
 
     def init_info(self):
         File = open(config.path_csv, 'r')
